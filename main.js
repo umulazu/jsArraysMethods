@@ -29,9 +29,11 @@ console.table(fifteenAnotherWay);
 
 // Array.prototype.map()
 // 2. Give us an array of the inventors' first and last names
-const fioOfInventors = inventors.map(function (inventor) {
-    return inventor.first + ' ' + inventor.last;
-});
+const fullNameOfInventors = inventors.map(inventor => `${inventor.first} ${inventor.second}`);
+console.log(fullNameOfInventors);
+// const fioOfInventors = inventors.map(function (inventor) {
+//     return inventor.first + ' ' + inventor.last;
+// });
 console.table(fioOfInventors);
 
 
